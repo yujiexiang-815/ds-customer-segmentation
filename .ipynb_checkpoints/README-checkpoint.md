@@ -31,7 +31,6 @@ The project utilizes the following key analytical and modeling steps:
 │   ├── rfm_calculator.py      # RFM metrics calculation by vertical
 │   ├── feature_engineering.py # Feature merging, imputation, normalization
 │   ├── scoring.py             # Affinity score calculation and vertical assignment
-│   ├── monitoring.py          # Feature distribution checks and drift detection
 │   ├── evaluation.py          # Model evaluation and validation
 │   ├── main.py                # Main pipeline entry point
 │   └── README.md              # Package documentation
@@ -80,13 +79,7 @@ The `vertical_affinity/` package provides a structured implementation for custom
    - Calculates weighted affinity scores for each vertical
    - Assigns predicted vertical based on maximum affinity score
 
-6. **Monitoring (`monitoring.py`)**
-   - Feature distribution checks and drift detection
-   - Tracks total members, touchpoint coverage, and feature composition
-   - Monitors feature statistics and predicted vertical distribution
-   - Helps detect data quality issues and distribution shifts across pipeline runs
-
-7. **Evaluation (`evaluation.py`)**
+6. **Evaluation (`evaluation.py`)**
    - Validates predictions against actual purchase behavior
    - Calculates CVR ratios, purchase ratios, and sales share ratios
 
